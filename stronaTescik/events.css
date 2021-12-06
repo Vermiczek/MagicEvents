@@ -1,0 +1,60 @@
+body{
+    border-radius: 25px;
+    background-color: lightblue;
+    border: teal;
+    width:300px;
+    height:200px;
+}
+
+.eventBox .event{
+  padding: 20px;
+}
+
+.box{
+    border-radius: 25px;
+    padding: 20px;
+    width: 250px;
+  }
+
+.box .button{
+    width: 150px;
+    margin: 20px;
+    border-radius:10px;
+    border-color: teal;
+    background-color: teal;
+    position: relative;
+    left: 85%;
+}
+
+button{
+    width: 150px;
+    color: white;
+    margin: 20px;
+    border-radius:10px;
+    border-color: teal;
+    background-color: teal;
+}
+  
+.inputs{
+      border-radius: 10px;
+      color: black;
+      position: relative;
+      left: 85%;
+  }
+  
+.inputdata{
+      border-radius:20px;
+  }
+
+.inputs label{
+      size: 15px;
+      left:50%;
+  }
+
+.eventBox .btn{
+    width: 150px;
+    border-radius:10px;
+    border-color: teal;
+    background-color: teal;
+    color: white;
+}

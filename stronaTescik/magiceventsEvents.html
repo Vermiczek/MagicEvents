@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<!-- HTML file head: web page metadata -->
+	<head>
+		<title>Raspberry Pi IoT</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+        <!-- jQuery -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="events.js"></script>
+        <link rel="stylesheet" type="text/css" href="events.css"/>
+	</head>
+
+
+	<!-- HTML file body: web page content -->
+	<body onload="setvariables()">
+        <div class = "box" id = "box">
+            <div class = inputs>
+                <label>Login:   </label> 
+                <div class="inputdata">     
+                    <input type ="text" class = "inputdataspace" id = "login"> 
+                </div> 
+                <label>Password:</label>
+                <div class="inputdata">
+                    <input type ="text" class = "inputdataspace" id = "password">
+                </div>  
+            </div>
+            <div class = "buttons">
+                <button type="button" class="button" onclick="loginEvents()" >Log in</button>
+            </div>
+            <b id = "info" style = "float: right; position: relative; left: 85%"></b>
+        </div>
+        <div id = "eventBox" class = "eventBox" style="display: none">
+    <div class = "date" style="padding: 20px;">
+        <b>Current date: </b>
+    <p id="date"></p>
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
+</div>
+
+    <div id = "event" class="event"><img class = "thumbnail" id="thumbnail1" src="./pictures/thumbnail1.jpg" style="width: 300px; height: 200px;"> 
+        <p><b>Event name: <b id = "eventname1"></b></b> </p>
+        <p><b>Start date: <b id = "startingDate1"></b></b> </p>
+        <p><b>End date: <b id = "endDate1"></b></b></p>
+        <button type="button" class="button" onclick="signForEvent(1)" >Log in</button>
+        <button type="button" class="button" onclick="removeReservation(1)" >removeReservation</button>
+        <b id = "info1" style = "float: right; position: relative; left: 35%; margin:30px;"></b>
+        <div class="inputdata">     
+            <input type ="text" class = "inputdataspace" id = "ev1"> 
+        </div> 
+    
+    <div id = "event" class="event"><img class = "thumbnail" id="thumbnail2" src="./pictures/thumbnail2.jpg" style="width: 300px; height: 200px;"> 
+        <p><b>Event name:<b id = "eventname2"></b> </b> </p>
+        <p><b>Start date: <b id = "startingDate2"></b></b> </p>
+        <p><b>End date: <b id = "endDate2"></b></b></p>
+        <button type="button" class="button" onclick="signForEvent(2)" >Log in</button>
+        <button type="button" class="button" onclick="removeReservation(2)" >removeReservation</button>
+        <b id = "info2" style = "float: right; position: relative; left: 35%; margin:30px;"></b>
+        <div class="inputdata">     
+            <input type ="text" class = "inputdataspace" id = "ev2"> 
+        </div> 
+    <div id = "event" class="event"><img class = "thumbnail" id="thumbnail3" src="./pictures/thumbnail3.jpg" style="width: 300px; height: 200px;"> 
+            <p><b>Event name:<b id = "eventname3"></b> </b> </p>
+            <p><b>Start date: <b id = "startingDate3"></b></b> </p>
+            <p><b>End date: <b id = "endDate3"></b></b></p>
+            <button type="button" class="button" onclick="signForEvent(3)" >Log in</button>
+            <button type="button" class="button" onclick="removeReservation(3)" >removeReservation</button>
+    <b id = "info3" style = "float: right; position: relative; left: 35%; margin:30px;"></b>
+    <div class="inputdata">     
+        <input type ="text" class = "inputdataspace" id = "ev3"> 
+    </div> 
+     <div id = "event3" class="event"><img class = "thumbnail" id="thumbnail4" src="./pictures/thumbnail4.jpg" style="width: 300px; height: 200px;"> 
+                <p><b>Event name:<b id = "eventname4"></b> </b> </p>
+                <p><b>Start date: <b id = "startingDate4"></b></b> </p>
+        <p><b>End date: <b id = "endDate4"></b></b></p>
+        <button type="button" class="button" onclick="signForEvent(4)" >Log in</button>
+        <button type="button" class="button" onclick="removeReservation(4)" >removeReservation</button>
+    <b id = "info4" style = "float: right; position: relative; left: 35%; margin:30px;"></b>
+    <div class="inputdata">     
+        <input type ="text" class = "inputdataspace" id = "ev4"> 
+    </div> 
+    <div id = "event" class="event"><img class = "thumbnail" id="thumbnail5" src="./pictures/thumbnail5.jpg" style="width: 300px; height: 200px;"> 
+                    <p><b>Event name:<b id = "eventname5"></b> </b> </p>
+                    <p><b>Start date: <b id = "startingDate5"></b></b> </p>
+                    <p><b>End date: <b id = "endDate5"></b></b></p>
+                    <button type="button" class="button" onclick="signForEvent(5)" >Log in</button>
+                    <button type="button" class="button" onclick="removeReservation(5)" >removeReservation</button>
+     <b id = "info5" style = "float: right; position: relative; left: 35%; margin:30px;"></b>
+     <div class="inputdata">     
+        <input type ="text" class = "inputdataspace" id = "ev5"> 
+    </div> 
+    </div>
+	</body>
+
+</html>

@@ -1,0 +1,40 @@
+ .header{
+    background-color: teal;
+    font-size: 55x;
+    color: whitesmoke;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+ 
+ }
+ 
+ .logo{
+    box-sizing: border-box;
+    width: 5%
+ }
+ 
+ .topnav{
+    margin-left: 10px;
+ }
+ 
+ body {
+     background-color:#E4ECFF;
+     background-image: url('pictures/background_pic.jpg')
+  }
+ 
+ .contentiframe{
+    margin-top: 10px;
+    padding-left: 10px;
+    width: 600px;
+    height: 500px;
+    border-radius: 30px;
+ }
+ 
+
+ .btn{
+    background-color: teal;
+    font-size: 50x;
+    color: whitesmoke;
+    border: 10px;
+    width: 200px;
+ }
